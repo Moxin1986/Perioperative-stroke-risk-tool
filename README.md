@@ -99,8 +99,13 @@ The calculator implements validated logistic regression coefficients:
 
 ```javascript
 const coefs = {
-  intercept:          -8.231625,
-  ProcAge:             0.0184396,
+  intercept:          -7.007242,
+  Age:                 0.0247828,
+  pay1_2:              0.1542945,
+  pay1_3:              0.142146,
+  pay1_4:              0.2560732,
+  zipinc_qrtl_2:      -0.056029,
+
   t2_diabetes:         0.1863285,
   hypertension:        0.4105921,
   history_stroke:      1.3059540,
