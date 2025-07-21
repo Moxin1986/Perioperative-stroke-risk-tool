@@ -105,13 +105,23 @@ const coefs = {
   pay1_3:              0.142146,
   pay1_4:              0.2560732,
   zipinc_qrtl_2:      -0.056029,
-
-  t2_diabetes:         0.1863285,
-  hypertension:        0.4105921,
-  history_stroke:      1.3059540,
-  carotid_stenosis:    0.7243695,
-  intracranial_athero: 1.0150850,
-  afib:                0.2812061,
+  zipinc_qrtl_3:      -0.0368552,
+  zipinc_qrtl_4:      -0.0662008,
+  aprdrg_severity_2:   1.944031,  
+  aprdrg_severity_3:   3.054452,
+  elective:           -0.8207688,
+  diabetes_mellitus:   0.1014965,
+  hypertension:        0.1883976,
+  hyperlipidemia:      0.1722723,
+  history_stroke:      1.027026,
+  carotid_stenosis:    0.8288997,
+  intracranial_athero: 2.193744,
+  chf:                -0.0398415,
+  afib:                0.1756876,
+  chronic_lung_disease:-0.3056947,
+  ckd:                -0.2335946,
+  active_cancer:      -0.642137,
+  coagulopathy:  
   pc1:                 1.4298020,  // Emergency/Inpatient Surgery
   pc2:                -0.4284533,  // Outpatient Clinic
   pg2:                 0.4064888,  // Transplant Surgery
