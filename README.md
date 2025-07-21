@@ -21,7 +21,7 @@ The risk prediction model was developed using the Nationwide Readmissions Databa
 
 - **Patient Demographics**: Age (continuous variable), sex, insurance status, median income by Zip code
 - **Medical Comorbidities**: DRG: severity of illness, diabetes mellitus, hypertension, hyperlipidema, history of stroke, carotid stenosis, intracranial atherosclerosis, congestive heart failure, atrial fibrillation, chronic lung disease, chronic kidney disease, active cancer, coagulopathy, substance abuse
-- **Surgical Factors**: Surgery/procedure setting (ambulatory surgery, emergency/inpatient surgery, outpatient clinic), procedure category (10 specialty groups)
+- **Surgical Factors**: Surgery/procedure setting (elective admission, non-elective admission), procedure category (10 specialty groups)
 
 ### Statistical Methods
 - **Model Type**: Multivariable logistic regression
