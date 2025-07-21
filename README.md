@@ -21,17 +21,17 @@ The risk prediction model was developed using the Nationwide Readmissions Databa
 
 - **Patient Demographics**: Age (continuous variable), sex, insurance status, median income by Zip code
 - **Medical Comorbidities**: DRG: severity of illness, diabetes mellitus, hypertension, hyperlipidema, history of stroke, carotid stenosis, intracranial atherosclerosis, congestive heart failure, atrial fibrillation, chronic lung disease, chronic kidney disease, active cancer, coagulopathy, substance abuse
-- **Surgical Factors**: Surgery/procedure setting (elective admission, non-elective admission), procedure category (10 specialty groups)
+- **Surgical Factors**: Surgery/procedure setting (elective admission, non-elective admission), procedure category (neurological procedure, cardiovascular procedure, other procedure)
 
 ### Statistical Methods
 - **Model Type**: Multivariable logistic regression
 - **Variable Selection**: Stepwise selection with clinical relevance assessment
-- **Model Validation**: Internal validation using bootstrap resampling (1000 iterations)
-- **Performance Metrics**: Discrimination (c-statistic), calibration (Hosmer-Lemeshow test), and clinical utility assessment
+- **Model Validation**: Ten-fold cross-validation
+- **Performance Metrics**: Discrimination (receiver operating characteristic curve [ROC] and the area under the curve [AUC]), calibration plot (Hosmer-Lemeshow test), and clinical utility assessment
 
 ### Model Performance
 The model demonstrates strong predictive performance suitable for clinical implementation:
-- **Discrimination**: c-statistic > 0.75
+- **Discrimination**: AUC > 0.85
 - **Calibration**: Good fit across risk strata
 - **Clinical Utility**: Net benefit analysis supports clinical use
 
@@ -44,7 +44,7 @@ The model demonstrates strong predictive performance suitable for clinical imple
 - **Risk Stratification**: Color-coded results (green: <1%, orange: 1-5%, red: ≥5%)
 
 ### Technical Features
-- **Evidence-Based**: Developed from multicenter data with external validation
+- **Evidence-Based**: Developed from NRD dataset with external validation
 - **Accessibility**: WCAG 2.1 AA compliant, screen reader compatible
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Offline Capable**: No internet connection required after initial load
@@ -62,7 +62,7 @@ The model demonstrates strong predictive performance suitable for clinical imple
 
 ### For Healthcare Providers
 
-1. **Enter Patient Age**: Input the patient's age in years (18-120, required field)
+1. **Enter Patient Demographics**: age: input the patient's age in years (18-120, required field), sex: female or male, insurance status: (medicare, medicaid, private insurance or self-pay), median income by Zip code (0-25 centile, 26-50 centile, 51-75 centile, 76-100 centile)
 2. **Select Medical Conditions**: Check all applicable medical conditions
 3. **Choose Surgery Setting**: Select the appropriate surgery/procedure setting
 4. **Select Procedure Category**: Choose the relevant surgical specialty category
