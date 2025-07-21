@@ -19,8 +19,8 @@ Perioperative stroke is a serious complication that can significantly impact pat
 ### Data Source and Model Development
 The risk prediction model was developed using the Nationwide Readmissions Database dataset, a comprehensive unique and powerful database designed to support various types of analyses of national readmission for all patients containing detailed perioperative and outcome data from 2016-2022. The model incorporates validated clinical predictors including:
 
-- **Patient Demographics**: Age (continuous variable), sex
-- **Medical Comorbidities**: Type 2 diabetes, hypertension, history of stroke, carotid stenosis, intracranial atherosclerosis, atrial fibrillation
+- **Patient Demographics**: Age (continuous variable), sex, insurance status, median income by Zip code
+- **Medical Comorbidities**: DRG: severity of illness, diabetes mellitus, hypertension, hyperlipidema, history of stroke, carotid stenosis, intracranial atherosclerosis, congestive heart failure, atrial fibrillation, chronic lung disease, chronic kidney disease, active cancer, coagulopathy, substance abuse
 - **Surgical Factors**: Surgery/procedure setting (ambulatory surgery, emergency/inpatient surgery, outpatient clinic), procedure category (10 specialty groups)
 
 ### Statistical Methods
