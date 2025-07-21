@@ -1,1 +1,1 @@
-Brown Perioperative Stroke Risk Assessment Tool
+Perioperative Stroke Risk Assessment Tool
