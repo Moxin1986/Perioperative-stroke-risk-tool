@@ -1,8 +1,8 @@
-# Brown Perioperative Stroke Risk Assessment Tool
+# NRD Perioperative Stroke Risk Assessment Tool
 
 ## Overview
 
-The Brown Perioperative Stroke Risk Assessment Tool is an evidence-based, web-based clinical decision support system designed to predict the risk of perioperative stroke in patients undergoing surgical procedures. This calculator implements a validated logistic regression model derived from comprehensive multicenter clinical data analysis, providing real-time risk assessment with confidence intervals and evidence-based clinical recommendations.
+The NRD Perioperative Stroke Risk Assessment Tool is an evidence-based, web-based clinical decision support system designed to predict the risk of perioperative stroke in patients undergoing major surgical procedures. This calculator implements a validated logistic regression model derived from comprehensive multicenter clinical data analysis, providing real-time risk assessment with confidence intervals and evidence-based clinical recommendations.
 
 ## Clinical Significance
 
