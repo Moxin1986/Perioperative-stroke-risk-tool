@@ -2,7 +2,7 @@
 
 ## Overview
 
-The NRD Perioperative Stroke Risk Assessment Tool is an evidence-based, web-based clinical decision support system designed to predict the risk of perioperative stroke in patients undergoing major surgical procedures. This calculator implements a validated logistic regression model derived from comprehensive multicenter clinical data analysis, providing real-time risk assessment with confidence intervals and evidence-based clinical recommendations.
+The NRD Perioperative Stroke Risk Assessment Tool is an evidence-based, web-based clinical decision support system designed to predict the risk of perioperative stroke in patients undergoing major surgical procedures. This calculator implements a validated logistic regression model derived from comprehensive Nationwide Readmissions Database analysis, providing real-time risk assessment with confidence intervals and evidence-based clinical recommendations.
 
 ## Clinical Significance
 
@@ -17,9 +17,9 @@ Perioperative stroke is a serious complication that can significantly impact pat
 ## Methodology
 
 ### Data Source and Model Development
-The risk prediction model was developed using the Brown University healthcare dataset, a comprehensive multicenter clinical database containing detailed perioperative and outcome data from 2016-2024. The model incorporates validated clinical predictors including:
+The risk prediction model was developed using the Nationwide Readmissions Database dataset, a comprehensive multicenter clinical database containing detailed perioperative and outcome data from 2016-2022. The model incorporates validated clinical predictors including:
 
-- **Patient Demographics**: Age (continuous variable)
+- **Patient Demographics**: Age (continuous variable), sex
 - **Medical Comorbidities**: Type 2 diabetes, hypertension, history of stroke, carotid stenosis, intracranial atherosclerosis, atrial fibrillation
 - **Surgical Factors**: Surgery/procedure setting (ambulatory surgery, emergency/inpatient surgery, outpatient clinic), procedure category (10 specialty groups)
 
