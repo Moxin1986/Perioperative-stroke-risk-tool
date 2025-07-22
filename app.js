@@ -4,50 +4,64 @@
 // 1. Model coefficients (β̂) from Stata
 // 1. Updated β̂ from Stata (n = 255,850; ref for PatientClass = Ambulatory Surgery; ref for proc_group = General Surgery)
 const coefs = {
-  intercept:          -8.231625,
-  ProcAge:             0.0184396,
-  t2_diabetes:         0.1863285,
-  hypertension:        0.4105921,
-  history_stroke:      1.3059540,
-  carotid_stenosis:    0.7243695,
-  intracranial_athero: 1.0150850,
-  afib:                0.2812061,
-  // Procedure Setting dummies:
-  pc1:                 1.4298020,  // Emergency/Inpatient Surgery
-  pc2:                -0.4284533,  // Outpatient Clinic
-  // Surgical group dummies:
-  pg2:                 0.4064888,  // Transplant Surgery
-  pg3:                 0.0237525,  // Orthopedic & Plastic Surgery
-  pg4:                 1.3228840,  // Neurosurgery
-  pg5:                 1.1866580,  // Cardiovascular Procedure
-  pg6:                 0.1703888,  // Thoracic Surgery
-  pg7:                 0.0192458,  // Head & Neck Surgery
-  pg8:                 0.0946338,  // OB-GYN Surgery
-  pg9:                 0.5609101,  // Urologic Surgery
-  pg10:                0.4104761   // Non-cardiac Medical Subspecialty Procedure
+  intercept:          -7.007242,
+  age:                 0.0247828,
+  female:
+  pay1_2:              0.1542945,
+  pay1_3:              0.142146,
+  pay1_4:              0.2560732,
+  zipinc_qrtl_2:      -0.056029,
+  zipinc_qrtl_3:      -0.0368552,
+  zipinc_qrtl_4:      -0.0662008,
+  aprdrg_severity_2:   1.944031,  
+  aprdrg_severity_3:   3.054452,
+  elective:           -0.8207688,
+  diabetes_mellitus:   0.1014965,
+  hypertension:        0.1883976,
+  hyperlipidemia:      0.1722723,
+  history_stroke:      1.027026,
+  carotid_stenosis:    0.8288997,
+  intracranial_athero: 2.193744,
+  chf:                -0.0398415,
+  afib:                0.1756876,
+  chronic_lung_disease:-0.3056947,
+  ckd:                -0.2335946,
+  active_cancer:      -0.642137,
+  coagulopathy:
+  substance_abuse:
+  procedure_1:                 1.4298020,  // Neurosurgery
+  procedure_2:                -0.4284533  // Cardiovascular Procedure
 };
 
 // 2. Updated SEs from Stata (for delta-method CI; diagonal only)
 const ses = {
-  intercept:           0.1659010,
-  ProcAge:             0.0022232,
-  t2_diabetes:         0.0617964,
-  hypertension:        0.0828836,
-  history_stroke:      0.0765373,
-  carotid_stenosis:    0.0879259,
-  intracranial_athero: 0.2178192,
-  afib:                0.0687794,
-  pc1:                 0.0662938,
-  pc2:                 0.1998123,
-  pg2:                 0.5911474,
-  pg3:                 0.1320459,
-  pg4:                 0.1228354,
-  pg5:                 0.1220113,
-  pg6:                 0.3503468,
-  pg7:                 0.1926140,
-  pg8:                 0.3512630,
-  pg9:                 0.2079462,
-  pg10:                0.1154995
+  intercept:          -7.007242,
+  age:                 0.0247828,
+  female:
+  pay1_2:              0.1542945,
+  pay1_3:              0.142146,
+  pay1_4:              0.2560732,
+  zipinc_qrtl_2:      -0.056029,
+  zipinc_qrtl_3:      -0.0368552,
+  zipinc_qrtl_4:      -0.0662008,
+  aprdrg_severity_2:   1.944031,  
+  aprdrg_severity_3:   3.054452,
+  elective:           -0.8207688,
+  diabetes_mellitus:   0.1014965,
+  hypertension:        0.1883976,
+  hyperlipidemia:      0.1722723,
+  history_stroke:      1.027026,
+  carotid_stenosis:    0.8288997,
+  intracranial_athero: 2.193744,
+  chf:                -0.0398415,
+  afib:                0.1756876,
+  chronic_lung_disease:-0.3056947,
+  ckd:                -0.2335946,
+  active_cancer:      -0.642137,
+  coagulopathy:
+  substance_abuse:
+  procedure_1:                 1.4298020,  // Neurosurgery
+  procedure_2:                -0.4284533  // Cardiovascular Procedure
 };
 
 // 3. Clinical guidance recommendations
