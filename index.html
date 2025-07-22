@@ -36,7 +36,7 @@
         <div class="form-grid">
           <!-- Age Section -->
           <fieldset class="fieldset">
-            <legend class="legend">Patient Age</legend>
+            <legend class="legend">Demographic Information</legend>
             <div class="age-input">
               <input 
                 type="number" 
@@ -51,6 +51,14 @@
               <label for="age">years</label>
             </div>
             <div id="age-help" class="help-text">Age range: 18-120 years</div>
+           </fieldset>
+           
+            <select name="female" id="female" aria-describedby="category-help">
+              <option value="1">Female</option>
+              <option value="0">Male</option>
+            </select>
+            <div id="category-help" class="help-text">Select the Sex</div>
+         
           </fieldset>
 
           <!-- Medical Conditions Section -->
