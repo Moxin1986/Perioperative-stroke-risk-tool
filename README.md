@@ -156,7 +156,7 @@ const coefs = {
 ## Validation and Quality Assurance
 
 ### Model Validation
-- **Internal Validation**: Bootstrap resampling (1000 iterations) on Brown University dataset
+- **Internal Validation**: Ten-fold cross-validation
 - **External Validation**: Performance assessment on independent datasets
 - **Calibration Assessment**: Hosmer-Lemeshow goodness-of-fit testing
 - **Discrimination Analysis**: Receiver operating characteristic curve analysis
@@ -199,7 +199,7 @@ For technical support, clinical questions, or collaboration opportunities:
 **Shu L, Furie KL, Garcia Guarniz AL, de Havenon A, Khan F, Nguyen TN, Siegler JE, Corne de Toledo ES, Wang S, Zhao X, Yaghi S.** A Multicenter Perioperative Stroke Risk Model. [Journal Name]. [Year].
 
 ### Web-Based Implementation
-**Brown Perioperative Stroke Risk Assessment Tool.** Evidence-based calculator implementing validated logistic regression model. Available at: [URL]
+**NRD Perioperative Stroke Risk Assessment Tool.** Evidence-based calculator implementing validated logistic regression model. Available at: [URL]
 
 ### Suggested Citation Format
 ```
