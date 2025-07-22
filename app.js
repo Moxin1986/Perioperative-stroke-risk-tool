@@ -135,33 +135,6 @@ function collectAndValidateInputs() {
       message: age < 18 ? 'Age must be 18 or older' : 'Please enter a valid age (18-120 years)'
     };
   }
-
-
-  pay1_2:              0.1542945,
-  pay1_3:              0.142146,
-  pay1_4:              0.2560732,
-  zipinc_qrtl_2:      -0.056029,
-  zipinc_qrtl_3:      -0.0368552,
-  zipinc_qrtl_4:      -0.0662008,
-  aprdrg_severity_2:   1.944031,  
-  aprdrg_severity_3:   3.054452,
-  elective:           -0.8207688,
-    
-  diabetes_mellitus:   0.1014965,
-  hypertension:        0.1883976,
-  hyperlipidemia:      0.1722723,
-  history_stroke:      1.027026,
-  carotid_stenosis:    0.8288997,
-  intracranial_athero: 2.193744,
-  chf:                -0.0398415,
-  afib:                0.1756876,
-  chronic_lung_disease:-0.3056947,
-  ckd:                -0.2335946,
-  active_cancer:      -0.642137,
-  coagulopathy:
-  substance_abuse:
-  procedure_1:                 1.4298020,  // Neurosurgery
-  procedure_2:                -0.4284533  // Cardiovascular Procedure
   
   return {
     valid: true,
