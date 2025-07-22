@@ -110,31 +110,21 @@
             </div>
           </fieldset>
 
-          <!-- Surgery Settings Section -->
+          <!-- Surgery Settings Section --> & <!-- Procedure Category Section -->
           <fieldset class="fieldset">
             <legend class="legend">Surgery/Procedure Setting</legend>
-            <select name="patientClass" id="patientClass" aria-describedby="setting-help">
-              <option value="0">Ambulatory Surgery</option>
-              <option value="1">Emergency/Inpatient Surgery</option>
-              <option value="3">Outpatient Clinic</option>
+            <select name="elective" id="elective" aria-describedby="setting-help">
+              <option value="0">Non-elective Admission Surgery</option>
+              <option value="1">Elective Admission Surgery</option>
             </select>
             <div id="setting-help" class="help-text">Select the primary setting where the procedure will be performed</div>
           </fieldset>
 
-          <!-- Procedure Category Section -->
-          <fieldset class="fieldset">
             <legend class="legend">Surgery/Procedure Category</legend>
-            <select name="procGroup" id="procGroup" aria-describedby="category-help">
-              <option value="1">General Surgery</option>
-              <option value="2">Transplant Surgery</option>
-              <option value="3">Orthopedic & Plastic Surgery</option>
-              <option value="4">Neurosurgery</option>
-              <option value="5">Cardiovascular Procedure</option>
-              <option value="6">Thoracic Surgery</option>
-              <option value="7">Head & Neck Surgery</option>
-              <option value="8">OB-GYN Surgery</option>
-              <option value="9">Urologic Surgery</option>
-              <option value="10">Non-cardiac Medical Subspecialty Procedure</option>
+            <select name="procedure" id="procedure" aria-describedby="category-help">
+              <option value="0">Other General Surgery</option>
+              <option value="1">Neurosurgery</option>
+              <option value="2">Cardiovascular Procedure</option>
             </select>
             <div class="footnote">
               <sup>*</sup> Non-cardiac Medical Subspecialty Procedure includes: gastrointestinal endoscopy, pulmonology bronchoscopy, renal biopsy, pain injections, rehabilitation procedures, and other medical subspecialty interventions
