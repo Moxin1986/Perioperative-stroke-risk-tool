@@ -36,7 +36,7 @@
         <div class="form-grid">
           <!-- Age Section -->
           <fieldset class="fieldset">
-            <legend class="legend">Demographic Information</legend>
+            <legend class="legend">Patient Age</legend>
             <div class="age-input">
               <input 
                 type="number" 
@@ -53,12 +53,24 @@
             <div id="age-help" class="help-text">Age range: 18-120 years</div>
            </fieldset>
            
-            <select name="female" id="female" aria-describedby="category-help">
+          <!-- Sex Category Section -->
+            <legend class="legend">Sex</legend>
+          <select name="female" id="female" aria-describedby="category-help">
               <option value="1">Female</option>
               <option value="0">Male</option>
             </select>
             <div id="category-help" class="help-text">Select the Sex</div>
-         
+          </fieldset>
+
+           <!-- Insurance Status Section -->
+            <legend class="legend">Insurance Status</legend>
+          <select name="pay1" id="pay1" aria-describedby="category-help">
+              <option value="1">Medicare</option>
+              <option value="0">Medicaid</option>
+              <option value="0">Private Insurance</option>
+              <option value="0">Self-pay</option>
+            </select>
+            <div id="category-help" class="help-text">Select the Sex</div>
           </fieldset>
 
           <!-- Medical Conditions Section -->
