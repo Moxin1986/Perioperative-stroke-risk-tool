@@ -53,7 +53,50 @@
             <div id="age-help" class="help-text">Age range: 18-120 years</div>
            </fieldset>
 
-                  <!-- Medical Conditions Section -->
+           
+           
+          <!-- Sex Category Section -->
+            <legend class="legend">Sex</legend>
+          <select name="female" id="female" aria-describedby="category-help">
+              <option value="1">Female</option>
+              <option value="0">Male</option>
+            </select>
+            <div id="category-help" class="help-text">Select the Sex</div>
+          </fieldset>
+
+           <!-- Insurance Status Section -->
+            <legend class="legend">Insurance Status</legend>
+          <select name="pay1" id="pay1" aria-describedby="category-help">
+              <option value="1">Medicare</option>
+              <option value="2">Medicaid</option>
+              <option value="3">Private Insurance</option>
+              <option value="4">Self-pay</option>
+            </select>
+            <div id="category-help" class="help-text">Select the Sex</div>
+          </fieldset>
+
+           <!-- Median Income by Zip Code Section -->
+            <legend class="legend">Median Income</legend>
+          <select name="zipinc_qrtl" id="zipinc_qrtl" aria-describedby="category-help">
+              <option value="1">0–25 Centile</option>
+              <option value="2">26–50 Centile</option>
+              <option value="3">51–75 Centile</option>
+              <option value="4">76–100 Centile</option>
+            </select>
+            <div id="category-help" class="help-text">Select the Sex</div>
+          </fieldset>
+
+           <!-- refined DRG: severity of illness subclass Section -->
+            <legend class="legend">DRG: severity of illness subclass</legend>
+          <select name="aprdrg_severity" id="aprdrg_severity" aria-describedby="category-help">
+              <option value="1">Minor or Moderate</option>
+              <option value="2">Major</option>
+              <option value="3">Extreme</option>
+            </select>
+            <div id="category-help" class="help-text">Select the Sex</div>
+          </fieldset>
+
+          <!-- Medical Conditions Section -->
           <fieldset class="fieldset">
             <legend class="legend">Medical Conditions</legend>
             <div class="checkbox-group">
@@ -108,47 +151,6 @@
               <input type="checkbox" name="substance_abuse" id="substance_abuse" />
               <label for="substance_abuse">Substance Abuse</label>
             </div>
-          </fieldset>
-           
-          <!-- Sex Category Section -->
-            <legend class="legend">Sex</legend>
-          <select name="female" id="female" aria-describedby="category-help">
-              <option value="1">Female</option>
-              <option value="0">Male</option>
-            </select>
-            <div id="category-help" class="help-text">Select the Sex</div>
-          </fieldset>
-
-           <!-- Insurance Status Section -->
-            <legend class="legend">Insurance Status</legend>
-          <select name="pay1" id="pay1" aria-describedby="category-help">
-              <option value="1">Medicare</option>
-              <option value="2">Medicaid</option>
-              <option value="3">Private Insurance</option>
-              <option value="4">Self-pay</option>
-            </select>
-            <div id="category-help" class="help-text">Select the Sex</div>
-          </fieldset>
-
-           <!-- Median Income by Zip Code Section -->
-            <legend class="legend">Median Income</legend>
-          <select name="zipinc_qrtl" id="zipinc_qrtl" aria-describedby="category-help">
-              <option value="1">0–25 Centile</option>
-              <option value="2">26–50 Centile</option>
-              <option value="3">51–75 Centile</option>
-              <option value="4">76–100 Centile</option>
-            </select>
-            <div id="category-help" class="help-text">Select the Sex</div>
-          </fieldset>
-
-           <!-- refined DRG: severity of illness subclass Section -->
-            <legend class="legend">DRG: severity of illness subclass</legend>
-          <select name="aprdrg_severity" id="aprdrg_severity" aria-describedby="category-help">
-              <option value="1">Minor or Moderate</option>
-              <option value="2">Major</option>
-              <option value="3">Extreme</option>
-            </select>
-            <div id="category-help" class="help-text">Select the Sex</div>
           </fieldset>
 
           <!-- Surgery Settings Section --> 
