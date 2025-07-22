@@ -1,8 +1,8 @@
-# NRD Perioperative Stroke Risk Assessment Tool
+# For major surgery Perioperative Stroke Risk Assessment Tool
 
 ## Overview
 
-The NRD Perioperative Stroke Risk Assessment Tool is an evidence-based, web-based clinical decision support system designed to predict the risk of perioperative stroke in patients undergoing major surgical procedures. This calculator implements a validated logistic regression model derived from comprehensive Nationwide Readmissions Database analysis, providing real-time risk assessment with confidence intervals and evidence-based clinical recommendations.
+The major surgery Perioperative Stroke Risk Assessment Tool is an evidence-based, web-based clinical decision support system designed to predict the risk of perioperative stroke in patients undergoing major surgical procedures. This calculator implements a validated logistic regression model derived from comprehensive Nationwide Readmissions Database analysis, providing real-time risk assessment with confidence intervals and evidence-based clinical recommendations.
 
 ## Clinical Significance
 
@@ -87,7 +87,7 @@ The model demonstrates strong predictive performance suitable for clinical imple
 
 ### File Structure
 ```
-brown-perioperative-stroke-calc/
+Major-surgery-perioperative-stroke-calc/
 ├── index.html          # Main HTML interface with accessibility features
 ├── app.js             # JavaScript calculation engine with validation
 ├── style.css          # Professional medical-grade styling
@@ -199,12 +199,12 @@ For technical support, clinical questions, or collaboration opportunities:
 **Shu L, Furie KL, Garcia Guarniz AL, de Havenon A, Khan F, Nguyen TN, Siegler JE, Corne de Toledo ES, Wang S, Zhao X, Yaghi S.** A Multicenter Perioperative Stroke Risk Model. [Journal Name]. [Year].
 
 ### Web-Based Implementation
-**NRD Perioperative Stroke Risk Assessment Tool.** Evidence-based calculator implementing validated logistic regression model. Available at: [URL]
+**For Major Surgery Perioperative Stroke Risk Assessment Tool.** Evidence-based calculator implementing validated logistic regression model. Available at: [URL]
 
 ### Suggested Citation Format
 ```
 Shu L, et al. A Multicenter Perioperative Stroke Risk Model. [Journal Name]. [Year].
-Brown Perioperative Stroke Risk Assessment Tool. Available at: [URL]
+For Major Surgery Perioperative Stroke Risk Assessment Tool. Available at: [URL]
 ```
 
 ## Limitations and Disclaimers
