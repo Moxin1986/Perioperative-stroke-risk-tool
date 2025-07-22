@@ -122,17 +122,9 @@ const coefs = {
   ckd:                -0.2335946,
   active_cancer:      -0.642137,
   coagulopathy:  
-  pc1:                 1.4298020,  // Emergency/Inpatient Surgery
-  pc2:                -0.4284533,  // Outpatient Clinic
-  pg2:                 0.4064888,  // Transplant Surgery
-  pg3:                 0.0237525,  // Orthopedic & Plastic Surgery
-  pg4:                 1.3228840,  // Neurosurgery
-  pg5:                 1.1866580,  // Cardiovascular Procedure
-  pg6:                 0.1703888,  // Thoracic Surgery
-  pg7:                 0.0192458,  // Head & Neck Surgery
-  pg8:                 0.0946338,  // OB-GYN Surgery
-  pg9:                 0.5609101,  // Urologic Surgery
-  pg10:                0.4104761   // Non-cardiac Medical Subspecialty Procedure
+  procedure_1:                 1.4298020,  // Neurosurgery
+  procedure_2:                -0.4284533,  // Cardiovascular Procedure
+  
 };
 ```
 
