@@ -1,4 +1,4 @@
-// NRD Perioperative Stroke Risk Assessment Tool
+// For Major Surgery Perioperative Stroke Risk Assessment Tool
 // Evidence-based calculator implementing validated logistic regression model
 
 // 1. Model coefficients (β̂) from Stata
