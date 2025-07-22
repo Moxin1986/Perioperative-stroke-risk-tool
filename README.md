@@ -247,6 +247,6 @@ Brown Perioperative Stroke Risk Assessment Tool. Available at: [URL]
 **Disclaimer**: This calculator is intended for educational and clinical decision support purposes only. It should not replace professional medical judgment or clinical decision-making. Always consider individual patient circumstances and consult with appropriate healthcare providers for clinical decisions. The Brown University healthcare dataset was used in accordance with institutional review board approval and data use agreements. Use of this tool implies acceptance of these limitations and disclaimers.
 
 **Version**: 1.0.0  
-**Last Updated**: 2024  
+**Last Updated**: 2025  
 **Institution**: Brown University Medical School  
 **License**: MIT License 
