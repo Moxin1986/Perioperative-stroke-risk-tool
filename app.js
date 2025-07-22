@@ -177,51 +177,23 @@ function calculateRiskProbability(inputs) {
     zipinc_qrtl_4: inputs.zipinc_qrtl === '4' ? 1 : 0,     
     aprdrg_severity_2: inputs.aprdrg_severity === '2' ? 1 : 0,  
     aprdrg_severity_3: inputs.aprdrg_severity === '3' ? 1 : 0,  
-    
-    
-    t2_diabetes: inputs.t2_diabetes ? 1 : 0,
+    elective: inputs.elective ? 1 : 0,
+    diabetes_mellitus: inputs.diabetes_mellitus ? 1 : 0,
     hypertension: inputs.hypertension ? 1 : 0,
+    hyperlipidemia: inputs.hyperlipidemia ? 1 : 0,
     history_stroke: inputs.history_stroke ? 1 : 0,
     carotid_stenosis: inputs.carotid_stenosis ? 1 : 0,
     intracranial_athero: inputs.intracranial_athero ? 1 : 0,
+    chf: inputs.chf ? 1 : 0,
     afib: inputs.afib ? 1 : 0,
-    pc1: inputs.patientClass === '1' ? 1 : 0,
-    pc2: inputs.patientClass === '3' ? 1 : 0,
-    pg2: inputs.procGroup === '2' ? 1 : 0,
-    pg3: inputs.procGroup === '3' ? 1 : 0,
-    pg4: inputs.procGroup === '4' ? 1 : 0,
-    pg5: inputs.procGroup === '5' ? 1 : 0,
-    pg6: inputs.procGroup === '6' ? 1 : 0,
-    pg7: inputs.procGroup === '7' ? 1 : 0,
-    pg8: inputs.procGroup === '8' ? 1 : 0,
-    pg9: inputs.procGroup === '9' ? 1 : 0,
-    pg10: inputs.procGroup === '10' ? 1 : 0
-    age:                 0.0247828,
-  female:
-  pay1_2:              0.1542945,
-  pay1_3:              0.142146,
-  pay1_4:              0.2560732,
-  zipinc_qrtl_2:      -0.056029,
-  zipinc_qrtl_3:      -0.0368552,
-  zipinc_qrtl_4:      -0.0662008,
-  aprdrg_severity_2:   1.944031,  
-  aprdrg_severity_3:   3.054452,
-  elective:           -0.8207688,
-  diabetes_mellitus:   0.1014965,
-  hypertension:        0.1883976,
-  hyperlipidemia:      0.1722723,
-  history_stroke:      1.027026,
-  carotid_stenosis:    0.8288997,
-  intracranial_athero: 2.193744,
-  chf:                -0.0398415,
-  afib:                0.1756876,
-  chronic_lung_disease:-0.3056947,
-  ckd:                -0.2335946,
-  active_cancer:      -0.642137,
-  coagulopathy:
-  substance_abuse:
-  procedure_1:                 1.4298020,  // Neurosurgery
-  procedure_2:                -0.4284533  // Cardiovascular Procedure
+    chronic_lung_disease: inputs.chronic_lung_disease ? 1 : 0,
+    ckd: inputs.ckd ? 1 : 0,
+    active_cancer: inputs.active_cancer ? 1 : 0,
+    coagulopathy: inputs.coagulopathy ? 1 : 0,
+    substance_abuse: inputs.substance_abuse ? 1 : 0,
+    procedure_1: inputs.procedure === '1' ? 1 : 0,
+    procedure_2: inputs.procedure === '2' ? 1 : 0,
+    
   };
 
   // Calculate linear predictor
@@ -365,6 +337,6 @@ window.BrownStrokeRiskCalculator = {
     coefficients: coefs,
     standardErrors: ses,
     version: '1.0.0',
-    lastUpdated: '2024'
+    lastUpdated: '2025'
   })
 };
