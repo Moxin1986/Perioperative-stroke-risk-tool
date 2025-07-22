@@ -167,7 +167,18 @@ function calculateRiskProbability(inputs) {
   // Build covariate vector
   const x = {
     intercept: 1,
-    ProcAge: inputs.age,
+    age: inputs.age,
+    female: inputs.female ? 1 : 0,
+    pay1_2: inputs.pay1 === '2' ? 1 : 0,
+    pay1_3: inputs.pay1 === '3' ? 1 : 0,
+    pay1_4: inputs.pay1 === '4' ? 1 : 0,
+    zipinc_qrtl_2: inputs.zipinc_qrtl === '2' ? 1 : 0,
+    zipinc_qrtl_3: inputs.zipinc_qrtl === '3' ? 1 : 0,     
+    zipinc_qrtl_4: inputs.zipinc_qrtl === '4' ? 1 : 0,     
+    aprdrg_severity_2: inputs.aprdrg_severity === '2' ? 1 : 0,  
+    aprdrg_severity_3: inputs.aprdrg_severity === '3' ? 1 : 0,  
+    
+    
     t2_diabetes: inputs.t2_diabetes ? 1 : 0,
     hypertension: inputs.hypertension ? 1 : 0,
     history_stroke: inputs.history_stroke ? 1 : 0,
@@ -185,6 +196,32 @@ function calculateRiskProbability(inputs) {
     pg8: inputs.procGroup === '8' ? 1 : 0,
     pg9: inputs.procGroup === '9' ? 1 : 0,
     pg10: inputs.procGroup === '10' ? 1 : 0
+    age:                 0.0247828,
+  female:
+  pay1_2:              0.1542945,
+  pay1_3:              0.142146,
+  pay1_4:              0.2560732,
+  zipinc_qrtl_2:      -0.056029,
+  zipinc_qrtl_3:      -0.0368552,
+  zipinc_qrtl_4:      -0.0662008,
+  aprdrg_severity_2:   1.944031,  
+  aprdrg_severity_3:   3.054452,
+  elective:           -0.8207688,
+  diabetes_mellitus:   0.1014965,
+  hypertension:        0.1883976,
+  hyperlipidemia:      0.1722723,
+  history_stroke:      1.027026,
+  carotid_stenosis:    0.8288997,
+  intracranial_athero: 2.193744,
+  chf:                -0.0398415,
+  afib:                0.1756876,
+  chronic_lung_disease:-0.3056947,
+  ckd:                -0.2335946,
+  active_cancer:      -0.642137,
+  coagulopathy:
+  substance_abuse:
+  procedure_1:                 1.4298020,  // Neurosurgery
+  procedure_2:                -0.4284533  // Cardiovascular Procedure
   };
 
   // Calculate linear predictor
