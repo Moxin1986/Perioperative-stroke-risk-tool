@@ -426,3 +426,8 @@ select:focus {
     transition: none !important;
   }
 }
+.socioeconomic-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
