@@ -39,29 +39,29 @@ const ses = {
   age:                 0.0003596,
   female:              0.0074252,
   pay1_2:              0.0138936,
-  pay1_3:              0.142146,
-  pay1_4:              0.2560732,
-  zipinc_qrtl_2:      -0.056029,
-  zipinc_qrtl_3:      -0.0368552,
-  zipinc_qrtl_4:      -0.0662008,
-  aprdrg_severity_2:   1.944031,  
-  aprdrg_severity_3:   3.054452,
-  elective:           -0.8207688,
-  diabetes_mellitus:   0.1014965,
-  hypertension:        0.1883976,
-  hyperlipidemia:      0.1722723,
-  history_stroke:      1.027026,
-  carotid_stenosis:    0.8288997,
-  intracranial_athero: 2.193744,
-  chf:                -0.0398415,
-  afib:                0.1756876,
-  chronic_lung_disease:-0.3056947,
-  ckd:                -0.2335946,
-  active_cancer:      -0.642137,
-  coagulopathy:
-  substance_abuse:
-  procedure_1:                 1.4298020,  // Neurosurgery
-  procedure_2:                -0.4284533  // Cardiovascular Procedure
+  pay1_3:              0.0109511,
+  pay1_4:              0.0268279,
+  zipinc_qrtl_2:       0.0110647,
+  zipinc_qrtl_3:       0.010886,
+  zipinc_qrtl_4:       0.0129829,
+  aprdrg_severity_2:   0.0169319,  
+  aprdrg_severity_3:   0.0184439,
+  elective:            0.0135107,
+  diabetes_mellitus:   0.0081614,
+  hypertension:        0.0108338,
+  hyperlipidemia:      0.0090424,
+  history_stroke:      0.0113151,
+  carotid_stenosis:    0.0168313,
+  intracranial_athero: 0.052665,
+  chf:                 0.0100778,
+  afib:                0.0092701,
+  chronic_lung_disease:0.0099025,
+  ckd:                 0.0092093,
+  active_cancer:       0.0123689,
+  coagulopathy:        0.0136913,
+  substance_abuse:     0.0097986, 
+  procedure_1:                 0.0148637,  // Neurosurgery
+  procedure_2:                 0.0122122  // Cardiovascular Procedure
 };
 
 // 3. Clinical guidance recommendations
