@@ -4,33 +4,33 @@
 // 1. Model coefficients (β̂) from Stata
 // 1. Updated β̂ from Stata (n = 9,652,133)
 const coefs = {
-  intercept:          -7.007242,
-  age:                 0.0247828,
-  female:
-  pay1_2:              0.1542945,
-  pay1_3:              0.142146,
-  pay1_4:              0.2560732,
-  zipinc_qrtl_2:      -0.056029,
-  zipinc_qrtl_3:      -0.0368552,
-  zipinc_qrtl_4:      -0.0662008,
-  aprdrg_severity_2:   1.944031,  
-  aprdrg_severity_3:   3.054452,
-  elective:           -0.8207688,
-  diabetes_mellitus:   0.1014965,
-  hypertension:        0.1883976,
-  hyperlipidemia:      0.1722723,
-  history_stroke:      1.027026,
-  carotid_stenosis:    0.8288997,
-  intracranial_athero: 2.193744,
-  chf:                -0.0398415,
-  afib:                0.1756876,
-  chronic_lung_disease:-0.3056947,
-  ckd:                -0.2335946,
-  active_cancer:      -0.642137,
-  coagulopathy:
-  substance_abuse:
-  procedure_1:                 1.4298020,  // Neurosurgery
-  procedure_2:                -0.4284533  // Cardiovascular Procedure
+  intercept:          -7.006029,
+  age:                 0.0128988,
+  female:              0.0263931,
+  pay1_2:              0.1547363,
+  pay1_3:              0.1425205,
+  pay1_4:              0.2565273,
+  zipinc_qrtl_2:      -0.056073,
+  zipinc_qrtl_3:      -0.0368253,
+  zipinc_qrtl_4:      -0.0661107,
+  aprdrg_severity_2:   1.943677,  
+  aprdrg_severity_3:   3.054484,
+  elective:           -0.8209716,
+  diabetes_mellitus:   0.1004419,
+  hypertension:        0.1875834,
+  hyperlipidemia:      0.1697699,
+  history_stroke:      1.026738,
+  carotid_stenosis:    0.8267146,
+  intracranial_athero: 2.193572,
+  chf:                -0.0427717,
+  afib:                0.1747905,
+  chronic_lung_disease:-0.3066023,
+  ckd:                -0.2339255,
+  active_cancer:      -0.6413832,
+  coagulopathy:        0.2247981,
+  substance_abuse:     0.2205459, 
+  procedure_1:                 1.960397,  // Neurosurgery
+  procedure_2:                -0.0351098,  // Cardiovascular Procedure
 };
 
 // 2. Updated SEs from Stata (for delta-method CI; diagonal only)
