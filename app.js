@@ -35,10 +35,10 @@ const coefs = {
 
 // 2. Updated SEs from Stata (for delta-method CI; diagonal only)
 const ses = {
-  intercept:          -7.007242,
-  age:                 0.0247828,
-  female:
-  pay1_2:              0.1542945,
+  intercept:           0.0315048,
+  age:                 0.0003596,
+  female:              0.0074252,
+  pay1_2:              0.0138936,
   pay1_3:              0.142146,
   pay1_4:              0.2560732,
   zipinc_qrtl_2:      -0.056029,
