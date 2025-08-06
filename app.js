@@ -118,19 +118,18 @@ function calculateRisk() {
 function collectAndValidateInputs() {
   const age = parseFloat(document.getElementById('age').value) || 0;
   
-  // Validate age
   if (!age || age < 18 || age > 120) {
     return {
       valid: false,
       message: age < 18 ? 'Age must be 18 or older' : 'Please enter a valid age (18-120 years)'
     };
   }
-  
+
   return {
     valid: true,
     age: age,
     pay1: document.getElementById('pay1').value,
-    elective: document.getElementById('elective').checked,
+    elective: document.getElementById('elective').value === '1',
     diabetes_mellitus: document.getElementById('diabetes_mellitus').checked,
     hypertension: document.getElementById('hypertension').checked,
     hyperlipidemia: document.getElementById('hyperlipidemia').checked,
@@ -146,7 +145,8 @@ function collectAndValidateInputs() {
     coagulopathy: document.getElementById('coagulopathy').checked,
     substance_abuse: document.getElementById('substance_abuse').checked,
     procedure: document.getElementById('procedure').value
-   
+
+
   };
 }
 
