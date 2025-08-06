@@ -25,7 +25,7 @@ const coefs = {
   coagulopathy:        0.673191,
   substance_abuse:     0.2373642, 
   procedure_1:         1.733389,  // Neurosurgery
-  procedure_2:        -0.1090445,  // Cardiovascular Procedure
+  procedure_2:        -0.1090445  // Cardiovascular Procedure
 };
 
 // 2. Updated SEs from Stata (for delta-method CI; diagonal only)
@@ -51,7 +51,7 @@ const ses = {
   coagulopathy:        0.0142159,
   substance_abuse:     0.0097368, 
   procedure_1:         0.0145644,  // Neurosurgery
-  procedure_2:         0.0119013,  // Cardiovascular Procedure
+  procedure_2:         0.0119013  // Cardiovascular Procedure
 };
 
 // 3. Clinical guidance recommendations
