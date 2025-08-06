@@ -34,6 +34,9 @@
     <main class="main-content">
       <form id="riskForm" novalidate>
         <div class="form-grid">
+          
+            <!-- Socioeconomic Status Section -->
+           <div class="socioeconomic-group">
           <!-- Age Section -->
           <fieldset class="fieldset">
             <legend class="legend">Patient Age</legend>
@@ -53,8 +56,6 @@
             <div id="age-help" class="help-text">Age range: 18-120 years</div>
            </fieldset>
 
-           <!-- Socioeconomic Status Section -->
-           <div class="socioeconomic-group">
               <!-- Insurance Status -->
            <fieldset class="fieldset">
             <legend class="legend">Insurance Status</legend>
@@ -65,18 +66,6 @@
               <option value="4">Self-pay</option>
             </select>
             <div id="category-help" class="help-text">Select insurance status</div>
-          </fieldset>
-
-           <!-- Median Income by Zip Code Section -->
-           <fieldset class="fieldset">
-            <legend class="legend">Median Income</legend>
-          <select name="zipinc_qrtl" id="zipinc_qrtl" aria-describedby="category-help">
-              <option value="1">0–25 Centile</option>
-              <option value="2">26–50 Centile</option>
-              <option value="3">51–75 Centile</option>
-              <option value="4">76–100 Centile</option>
-            </select>
-            <div id="category-help" class="help-text">Select the quartile income</div>
           </fieldset>
 
              <!-- Medical Conditions Section -->
