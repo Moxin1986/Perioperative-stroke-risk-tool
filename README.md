@@ -117,11 +117,10 @@ const coefs = {
   chronic_lung_disease:-0.1621339,
   ckd:                 -0.0669556,
   active_cancer:       -0.4788068,
-
-  coagulopathy:        0.2247981,
-  substance_abuse:     0.2205459, 
-  procedure_1:                 1.960397,  // Neurosurgery
-  procedure_2:                -0.0351098,  // Cardiovascular Procedure
+  coagulopathy:        0.673191,
+  substance_abuse:     0.2373642, 
+  procedure_1:         1.733389,  // Neurosurgery
+  procedure_2:        -0.1090445,  // Cardiovascular Procedure
   
 };
 ```
