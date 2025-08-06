@@ -77,6 +77,17 @@
             </select>
             <div id="setting-help" class="help-text">Select the primary setting where the procedure will be performed</div>
           </fieldset>
+
+               <!-- Procedure Category Section -->
+            <fieldset class="fieldset">
+            <legend class="legend">Surgery/Procedure Category</legend>
+            <select name="procedure" id="procedure" aria-describedby="category-help">
+              <option value="1">Neurological Procedure</option>
+              <option value="2">Cardiovascular Procedure</option>
+              <option value="0">Non-Cardiovascular or Non-Neurological Procedure</option>
+            </select>
+            <div id="category-help" class="help-text">Select the primary surgical specialty category</div>
+          </fieldset>
            </div>
         
              <!-- Medical Conditions Section -->
@@ -141,16 +152,7 @@
           </fieldset>
            </div>
 
-           <!-- Procedure Category Section -->
-            <fieldset class="fieldset">
-            <legend class="legend">Surgery/Procedure Category</legend>
-            <select name="procedure" id="procedure" aria-describedby="category-help">
-              <option value="1">Neurological Procedure</option>
-              <option value="2">Cardiovascular Procedure</option>
-              <option value="0">Non-Cardiovascular or Non-Neurological Procedure</option>
-            </select>
-            <div id="category-help" class="help-text">Select the primary surgical specialty category</div>
-          </fieldset>
+         
 
       <!-- Results Section -->
       <div id="result" class="results" aria-live="polite" role="status">
