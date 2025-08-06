@@ -68,6 +68,29 @@
             <div id="category-help" class="help-text">Select insurance status</div>
           </fieldset>
 
+              <!-- Surgery Settings Section --> 
+          <fieldset class="fieldset">
+            <legend class="legend">Surgery/Procedure Setting</legend>
+            <select name="elective" id="elective" aria-describedby="setting-help">
+              <option value="0">Non-elective Admission Surgery</option>
+              <option value="1">Elective Admission Surgery</option>
+            </select>
+            <div id="setting-help" class="help-text">Select the primary setting where the procedure will be performed</div>
+          </fieldset>
+
+          
+            <!-- Procedure Category Section -->
+            <fieldset class="fieldset">
+            <legend class="legend">Surgery/Procedure Category</legend>
+            <select name="procedure" id="procedure" aria-describedby="category-help">
+              <option value="1">Neurological Procedure</option>
+              <option value="2">Cardiovascular Procedure</option>
+              <option value="0">Non-Cardiovascular or Non-Neurological Procedure</option>
+            </select>
+            <div id="category-help" class="help-text">Select the primary surgical specialty category</div>
+          </fieldset>
+        </div>
+
              <!-- Medical Conditions Section -->
           <fieldset class="fieldset">
             <legend class="legend">Medical Conditions</legend>
@@ -128,29 +151,6 @@
               <label for="substance_abuse">Substance Abuse</label>
             </div>
           </fieldset>
-           
-          <!-- Surgery Settings Section --> 
-          <fieldset class="fieldset">
-            <legend class="legend">Surgery/Procedure Setting</legend>
-            <select name="elective" id="elective" aria-describedby="setting-help">
-              <option value="0">Non-elective Admission Surgery</option>
-              <option value="1">Elective Admission Surgery</option>
-            </select>
-            <div id="setting-help" class="help-text">Select the primary setting where the procedure will be performed</div>
-          </fieldset>
-
-          
-            <!-- Procedure Category Section -->
-            <fieldset class="fieldset">
-            <legend class="legend">Surgery/Procedure Category</legend>
-            <select name="procedure" id="procedure" aria-describedby="category-help">
-              <option value="1">Neurological Procedure</option>
-              <option value="2">Cardiovascular Procedure</option>
-              <option value="0">Non-Cardiovascular or Non-Neurological Procedure</option>
-            </select>
-            <div id="category-help" class="help-text">Select the primary surgical specialty category</div>
-          </fieldset>
-        </div>
        
 
       <!-- Results Section -->
