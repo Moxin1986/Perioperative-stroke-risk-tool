@@ -301,7 +301,7 @@ function addKeyboardNavigation() {
 
 // 14. Form validation feedback
 function addFormValidation() {
-  const ageInput = document.getElementById('procAge');
+  const ageInput = document.getElementById('age');
   
   ageInput.addEventListener('blur', function() {
     const age = parseFloat(this.value);
