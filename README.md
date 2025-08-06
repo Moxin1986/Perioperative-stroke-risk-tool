@@ -19,9 +19,9 @@ Perioperative stroke is a serious complication that can significantly impact pat
 ### Data Source and Model Development
 The risk prediction model was developed using the Nationwide Readmissions Database dataset, a comprehensive unique and powerful database designed to support various types of analyses of national readmission for all patients containing detailed perioperative and outcome data from 2016-2022. The model incorporates validated clinical predictors including:
 
-- **Patient Demographics**: age (continuous variable), sex, insurance status
-- **Medical Comorbidities**: diabetes mellitus, hypertension, hyperlipidema, history of stroke, carotid stenosis, intracranial atherosclerosis, congestive heart failure, atrial fibrillation, chronic lung disease, chronic kidney disease, active cancer, coagulopathy, substance abuse
-- **Surgical Factors**: Surgery/procedure setting (elective admission, non-elective admission), procedure category (neurological procedure, cardiovascular procedure, other procedure)
+- **Patient Demographics**: age (continuous variable), insurance status
+- **Medical Comorbidities**: diabetes mellitus, hypertension, hyperlipidema, history of stroke, carotid stenosis, intracranial atherosclerosis, coronary artery disease, congestive heart failure, atrial fibrillation, chronic lung disease, chronic kidney disease, active cancer, coagulopathy, substance abuse
+- **Surgical Factors**: Surgery/procedure setting (elective admission, non-elective admission), procedure category (neurological procedure, cardiovascular procedure, non-neurological or non-cardiovascular procedure)
 
 ### Statistical Methods
 - **Model Type**: Multivariable logistic regression
@@ -62,7 +62,7 @@ The model demonstrates strong predictive performance suitable for clinical imple
 
 ### For Healthcare Providers
 
-1. **Enter Patient Demographics**: age: input the patient's age in years (18-120, required field), sex: female or male, insurance status: (medicare, medicaid, private insurance or self-pay), median income by Zip code (0-25 centile, 26-50 centile, 51-75 centile, 76-100 centile)
+1. **Enter Patient Demographics**: age: input the patient's age in years (18-120, required field), insurance status: (medicare, medicaid, private insurance or self-pay),
 2. **Select Medical Conditions**: Check all applicable medical conditions
 3. **Choose Surgery Setting**: Select the appropriate surgery/procedure setting
 4. **Select Procedure Category**: Choose the relevant surgical specialty category
@@ -79,9 +79,9 @@ The model demonstrates strong predictive performance suitable for clinical imple
 
 ### Risk Categories and Clinical Implications
 
-- **Low Risk (< 1%)**: Standard perioperative monitoring appropriate
+- **Low Risk (<1%)**: Standard perioperative monitoring appropriate
 - **Moderate Risk (1-5%)**: Enhanced monitoring and stroke-specific protocols recommended
-- **High Risk (≥ 5%)**: Intensive monitoring and multidisciplinary consultation required
+- **High Risk (≥5%)**: Intensive monitoring and multidisciplinary consultation required
 
 ## Technical Implementation
 
@@ -99,29 +99,25 @@ The calculator implements validated logistic regression coefficients:
 
 ```javascript
 const coefs = {
-  intercept:          -7.006029,
-  age:                 0.0128988,
-  female:              0.0263931,
-  pay1_2:              0.1547363,
-  pay1_3:              0.1425205,
-  pay1_4:              0.2565273,
-  zipinc_qrtl_2:      -0.056073,
-  zipinc_qrtl_3:      -0.0368253,
-  zipinc_qrtl_4:      -0.0661107,
-  aprdrg_severity_2:   1.943677,  
-  aprdrg_severity_3:   3.054484,
-  elective:           -0.8209716,
-  diabetes_mellitus:   0.1004419,
-  hypertension:        0.1875834,
-  hyperlipidemia:      0.1697699,
-  history_stroke:      1.026738,
-  carotid_stenosis:    0.8267146,
-  intracranial_athero: 2.193572,
-  chf:                -0.0427717,
-  afib:                0.1747905,
-  chronic_lung_disease:-0.3066023,
-  ckd:                -0.2339255,
-  active_cancer:      -0.6413832,
+  intercept:          -4.783163,
+  age:                 0.009141,
+  pay1_2:              0.2209998,
+  pay1_3:              0.0695964,
+  pay1_4:              0.2176763,
+  elective:           -1.619188,
+  diabetes_mellitus:   0.1663859,
+  hypertension:        0.1770938,
+  hyperlipidemia:      0.0393305,
+  history_stroke:      0.9639001,
+  carotid_stenosis:    0.2989306,
+  intracranial_athero: 2.307316,
+  cad:                -0.0514714,
+  chf:                 0.3429653,
+  afib:                0.3415837,
+  chronic_lung_disease:-0.1621339,
+  ckd:                 -0.0669556,
+  active_cancer:       -0.4788068,
+
   coagulopathy:        0.2247981,
   substance_abuse:     0.2205459, 
   procedure_1:                 1.960397,  // Neurosurgery
