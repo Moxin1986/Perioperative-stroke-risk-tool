@@ -2,7 +2,7 @@
 // Evidence-based calculator implementing validated logistic regression model
 
 // 1. Model coefficients (β̂) from Stata
-// 1. Updated β̂ from Stata (n = 9,652,133)
+// 1. Updated β̂ from Stata (n = 9,767,688)
 const coefs = {
   intercept:          -4.783163,
   age:                 0.009141,
@@ -19,13 +19,13 @@ const coefs = {
   cad:                -0.0514714,
   chf:                 0.3429653,
   afib:                0.3415837,
-  chronic_lung_disease:-0.1621339,
+  chronic_lung_disease: -0.1621339,
   ckd:                 -0.0669556,
   active_cancer:       -0.4788068,
   coagulopathy:        0.673191,
   substance_abuse:     0.2373642, 
-  procedure_1:         1.733389,  // Neurosurgery
-  procedure_2:        -0.1090445  // Cardiovascular Procedure
+  procedure_1:         1.733389,  
+  procedure_2:        -0.1090445  
 };
 
 // 2. Updated SEs from Stata (for delta-method CI; diagonal only)
@@ -45,13 +45,13 @@ const ses = {
   cad:                 0.0091841,
   chf:                 0.010377,
   afib:                0.0094638,
-  chronic_lung_disease:0.0097578,
+  chronic_lung_disease: 0.0097578,
   ckd:                 0.009337,
   active_cancer:       0.0119971,
   coagulopathy:        0.0142159,
   substance_abuse:     0.0097368, 
-  procedure_1:         0.0145644,  // Neurosurgery
-  procedure_2:         0.0119013  // Cardiovascular Procedure
+  procedure_1:         0.0145644,  
+  procedure_2:         0.0119013  
 };
 
 // 3. Clinical guidance recommendations
@@ -145,7 +145,6 @@ function collectAndValidateInputs() {
     coagulopathy: document.getElementById('coagulopathy').checked,
     substance_abuse: document.getElementById('substance_abuse').checked,
     procedure: document.getElementById('procedure').value
-
 
   };
 }
