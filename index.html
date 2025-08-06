@@ -52,16 +52,6 @@
             </div>
             <div id="age-help" class="help-text">Age range: 18-120 years</div>
            </fieldset>
-          
-          <!-- Sex Category Section -->
-          <fieldset class="fieldset">
-            <legend class="legend">Sex</legend>
-          <select name="female" id="female" aria-describedby="category-help">
-              <option value="1">Female</option>
-              <option value="0">Male</option>
-            </select>
-            <div id="category-help" class="help-text">Select the sex</div>
-          </fieldset>
 
            <!-- Socioeconomic Status Section -->
            <div class="socioeconomic-group">
@@ -89,18 +79,6 @@
             <div id="category-help" class="help-text">Select the quartile income</div>
           </fieldset>
 
-           <!-- refined DRG: severity of illness subclass Section -->
-           <fieldset class="fieldset">
-            <legend class="legend">DRG: Severity of Illness</legend>
-          <select name="aprdrg_severity" id="aprdrg_severity" aria-describedby="category-help">
-              <option value="1">Minor or Moderate</option>
-              <option value="2">Major</option>
-              <option value="3">Extreme</option>
-            </select>
-            <div id="category-help" class="help-text">Select the severity status</div>
-          </fieldset>
-         </div>
-
              <!-- Medical Conditions Section -->
           <fieldset class="fieldset">
             <legend class="legend">Medical Conditions</legend>
@@ -127,6 +105,10 @@
             <div class="checkbox-group">
               <input type="checkbox" name="intracranial_athero" id="intracranial_athero" />
               <label for="intracranial_athero">Intracranial Atherosclerosis</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" name="intracranial_athero" id="intracranial_athero" />
+              <label for="cad">Coronary Artery Disease</label>
             </div>
              <div class="checkbox-group">
               <input type="checkbox" name="chf" id="chf" />
