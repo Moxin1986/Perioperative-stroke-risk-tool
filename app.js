@@ -129,7 +129,7 @@ function collectAndValidateInputs() {
     valid: true,
     age: age,
     pay1: document.getElementById('pay1').value,
-    elective: document.getElementById('elective').value === '1',
+    elective: document.getElementById('elective').value,
     diabetes_mellitus: document.getElementById('diabetes_mellitus').checked,
     hypertension: document.getElementById('hypertension').checked,
     hyperlipidemia: document.getElementById('hyperlipidemia').checked,
